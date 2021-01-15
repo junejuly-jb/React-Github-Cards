@@ -32,7 +32,14 @@ const CardList = (props) => {
   )
 }
 
-
+const Form = () => {
+  return (
+    <div>
+      <input type="text" placeholder="Add.." />
+      <button>Add</button>
+    </div>
+  )
+}
 const Card = (props) => {
   return (
     <div style={{ margin: '1rem'}}>
@@ -49,6 +56,7 @@ function App(props) {
   return (
     <div className="container mt-3">
       <h1 className="text-center">{props.title}</h1>
+      <Form />
       <CardList items={ testData }/>
     </div>
    )
